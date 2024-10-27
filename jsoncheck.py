@@ -13,7 +13,7 @@ def jsonchecker(inputf, outputf):
     try:
         json_data = load_json(inputf)
         save_json(json_data, outputf)
-        print("JSON has been successfully fixed & saved as", outputf)
+        print("JSON has been successfully checked & saved as", outputf)
     except json.JSONDecodeError as e:
         print("Error while loading JSON:", e)
     except Exception as e:
